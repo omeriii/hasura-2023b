@@ -1,3 +1,11 @@
 table:
   name: badges_definitions
   schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - description
+        - id
+        - title
+      filter: {}

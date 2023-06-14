@@ -1,13 +1,12 @@
-version: '3.6'
+version: "3.6"
 services:
-
   hasura-cli-console:
     build: ./.docker-images/hasura-cli
     ports:
       - 9695:9695
     volumes:
       - ./hasura-state:/project
-    command: > 
+    command: >
       hasura console 
         --log-level DEBUG 
         --address "hasura-cli-console" 
@@ -15,7 +14,7 @@ services:
         --api-host https://${CODESPACE_NAME}-9693.preview.app.github.dev
         --api-port 443
         --endpoint https://${CODESPACE_NAME}-8080.preview.app.github.dev
-        --admin-secret ${HASURA_ADMIN_SECRET:-hasura}
+        --admin-secret
     working_dir: /project
     restart: unless-stopped
     depends_on:
@@ -36,7 +35,7 @@ services:
         --address "hasura-cli-api"
         --no-browser
         --endpoint http://hasura-engine:8080
-        --admin-secret ${HASURA_ADMIN_SECRET:-hasura}
+        --admin-secret
     working_dir: /project
     restart: unless-stopped
     depends_on:
