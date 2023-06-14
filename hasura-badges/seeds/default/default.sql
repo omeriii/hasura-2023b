@@ -44,3 +44,12 @@ VALUES
     (3, 'Product 3', 5.99, 'This is product 3.'),
     (4, 'Product 4', 12.49, 'This is product 4.'),
     (5, 'Product 5', 8.75, 'This is product 5.');
+
+
+TRUNCATE customers RESTART IDENTITY CASCADE;
+INSERT INTO customers (customer_id, first_name, last_name, email, phone_number, address)
+VALUES
+    (1, 'John', 'Doe', 'johndoe@example.com', '1234567890', '123 Main St'),
+    (2, 'Jane', 'Smith', 'janesmith@example.com', '9876543210', '456 Elm St'),
+    (3, 'Alice', 'Johnson', 'alicejohnson@example.com', '5555555555', '789 Oak St'),
+    (4, 'Bob', 'Williams', 'bobwilliams@example.com', '1111111111', '321 Pine St');
