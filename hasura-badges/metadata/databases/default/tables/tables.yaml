@@ -1,6 +1,7 @@
 - "!include public_backoffice_users.yaml"
 - "!include public_badges_definitions.yaml"
 - "!include public_customers.yaml"
+- "!include public_goalscorers.yaml"
 - "!include public_products.yaml"
 - "!include public_requirements_definitions.yaml"
 - "!include public_students.yaml"

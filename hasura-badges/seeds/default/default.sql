@@ -53,3 +53,10 @@ VALUES
     (2, 'Jane', 'Smith', 'janesmith@example.com', '9876543210', '456 Elm St'),
     (3, 'Alice', 'Johnson', 'alicejohnson@example.com', '5555555555', '789 Oak St'),
     (4, 'Bob', 'Williams', 'bobwilliams@example.com', '1111111111', '321 Pine St');
+
+TRUNCATE goalscorers RESTART IDENTITY CASCADE;
+INSERT INTO goalscorers (goalscorer_id, first_name, last_name, team, goals_scored)
+VALUES
+    (1, 'Lionel', 'Messi', 'Barcelona', 25),
+    (2, 'Cristiano', 'Ronaldo', 'Juventus', 20),
+    (3, 'Robert', 'Lewandowski', 'Bayern Munich', 30);

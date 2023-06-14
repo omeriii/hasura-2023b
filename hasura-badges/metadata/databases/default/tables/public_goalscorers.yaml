@@ -1,0 +1,13 @@
+table:
+  name: goalscorers
+  schema: public
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - first_name
+        - last_name
+      filter: {}
+      query_root_fields:
+        - select
+      subscription_root_fields: []
