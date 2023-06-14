@@ -7,7 +7,6 @@ select_permissions:
       columns:
         - age
         - firstname
-        - gender
         - lastname
       filter: {}
       query_root_fields:
