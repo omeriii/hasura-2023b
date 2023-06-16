@@ -60,3 +60,9 @@ VALUES
     (1, 'Lionel', 'Messi', 'Barcelona', 25),
     (2, 'Cristiano', 'Ronaldo', 'Juventus', 20),
     (3, 'Robert', 'Lewandowski', 'Bayern Munich', 30);
+
+INSERT INTO Doctors (doctor_id, doctor_name, specialization, hospital_id)
+VALUES
+  (1, 'Dr. John Smith', 'Cardiology', 1),
+  (2, 'Dr. Emily Johnson', 'Pediatrics', 2),
+  (3, 'Dr. David Lee', 'Orthopedics', 1);
